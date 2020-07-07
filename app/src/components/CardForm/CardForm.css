@@ -1,0 +1,15 @@
+.CardForm .error {
+    font-size: small;
+    color: lightcoral;
+    margin: 1px;
+    text-align: center
+}
+
+.CardForm .field {
+    margin: 10px;
+}
+
+.CardForm .submit input {
+    margin: auto;
+    display: flex;
+}

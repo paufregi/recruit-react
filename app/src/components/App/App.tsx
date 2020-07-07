@@ -23,7 +23,8 @@ const App: React.FC = () => {
         <div className='right' />
       </div>
       <div className="body">
-        {menuIsOpen ? <Menu /> : <CardForm />}
+        {menuIsOpen ? 
+          <div className='left'><Menu /></div> : <div className='cente'><CardForm /></div>}
       </div>
     </div>
   )
