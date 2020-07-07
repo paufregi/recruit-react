@@ -4,6 +4,9 @@
 }
 
 .header {
+  display: flex;
+  flex-direction: row;
+  border-bottom-style: solid;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,9 +14,13 @@
   font-size: xx-large;
 }
 
+.left,
+.right {
+  flex: 1;
+}
+
 .body {
-  top: 0;
-  left: 0;
   width: 100%;
+  padding-top: 5%;
   margin: 5px;
 }
