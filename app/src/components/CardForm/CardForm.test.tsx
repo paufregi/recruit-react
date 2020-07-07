@@ -26,5 +26,19 @@ describe('CardForm', () => {
     expect(form.find('.error').length).toBe(0);
   })
 
-  
+  it('should update the inputs correctly', function() {
+    form.find('input[name="cardNumber"]').prop('onChange')({
+      target: { name: 'cardNumber', value: '123' },
+    })
+    form.find('input[name="cvc"]').prop('onChange')({
+      target: { name: 'cvc', value: '456' },
+    })
+    form.find('input[name="expiry"]').prop('onChange')({
+      target: { name: 'expiry', value: '01/01/2021' },
+    })
+    form.update();
+    expect(form.find('input[name="cardNumber"]').prop('value')).toEqual('123')
+    expect(form.find('input[name="cvc"]').prop('value')).toEqual('456')
+    expect(form.find('input[name="expiry"]').prop('value')).toEqual('01/01/2021')
+  })
 })
