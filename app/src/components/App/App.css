@@ -2,3 +2,18 @@
   background-color: #282c34;
   color: white;
 }
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 5px;
+  font-size: xx-large;
+}
+
+.body {
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 5px;
+}

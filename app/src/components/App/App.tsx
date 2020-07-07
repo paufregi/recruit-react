@@ -2,10 +2,16 @@ import React from 'react'
 
 import './App.css'
 
+import Menu from '../Menu/Menu'
+import CardForm from '../CardForm/CardForm'
+
 const App: React.FC = () => {
   return (
-    <div className="App">React App</div>
-  );
+    <div className="App">
+      <div className="header"><Menu /></div>
+      <div className="body"><CardForm /></div>
+    </div>
+  )
 }
 
-export default App;
+export default App
